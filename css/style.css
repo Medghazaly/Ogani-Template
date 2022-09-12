@@ -181,6 +181,7 @@ body {
   gap: 1rem;
   transition: var(--duration);
   visibility: hidden;
+  z-index: 1000;
 }
 
 .header-top .language:hover .language-list {
@@ -248,14 +249,14 @@ body {
   color: var(--main-color);
 }
 
-.header-bottom .links .slice {
+.header-bottom .links .header-pages {
   position: relative;
 }
 
-.header-bottom .links .slice .slice-list {
+.header-bottom .links .header-pages .header-pages-list {
   position: absolute;
   top: 5rem;
-  width: 20rem;
+  width: 15rem;
   background-color: black;
   color: #fff;
   font-weight: 300;
@@ -266,19 +267,20 @@ body {
   transition: var(--duration);
   visibility: hidden;
   opacity: 0;
+  z-index: 1000;
 }
 
-.header-bottom .links .slice:hover .slice-list {
+.header-bottom .links .header-pages:hover .header-pages-list {
   visibility: visible;
   top: 3rem;
   opacity: 1;
 }
 
-.header-bottom .links .slice li {
+.header-bottom .links .header-pages li {
   transition: var(--duration);
 }
 
-.header-bottom .links .slice li:hover {
+.header-bottom .links .header-pages li:hover {
   color: var(--main-color);
 }
 
@@ -298,27 +300,20 @@ body {
   z-index: 999;
 }
 
-.header-bottom .price .icons div::before {
-  width: 1rem;
-  height: 1rem;
-  background-color: var(--main-color);
-  color: white;
-  font-size: 1rem;
+.header-bottom .price .icons span {
+  height: 13px;
+  width: 13px;
+  background: #7fad39;
+  font-size: 10px;
+  color: #ffffff;
+  line-height: 13px;
   text-align: center;
-  padding: 0.2rem;
+  font-weight: 700;
+  display: inline-block;
   border-radius: 50%;
-  font-weight: bold;
   position: absolute;
-  top: -0.7rem;
-  right: 0.8rem;
-  cursor: pointer;
-}
-
-.header-bottom .price .icons .favorite::before {
-  content: "1";
-}
-.header-bottom .price .icons .shopping::before {
-  content: "3";
+  top: -0.4rem;
+  right: 0.7rem;
 }
 
 .header-bottom .price .icons i {
@@ -331,9 +326,5 @@ body {
 
 .header-bottom .price .total-price {
   font-size: 1.4rem;
-}
-
-.header-bottom .price .total-price span {
-  font-weight: 900;
 }
 /* End Bottom Header */
