@@ -216,36 +216,46 @@ body {
 
 /* Start Bottom Header */
 .header-bottom {
-  padding-top: 2rem;
+  padding: 3rem 0;
+  width: 100%;
 }
 
-.header-bottom .container {
+.header-bottom .header-bottom-container {
   display: flex;
-  justify-content: space-between;
   align-items: center;
 }
 
 .header-bottom .logo {
+  width: 25%;
   cursor: pointer;
+}
+
+.header-bottom .header-bottom-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 75%;
 }
 
 .header-bottom .links {
   display: flex;
   justify-content: space-between;
   gap: 5.5rem;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
   font-weight: 800;
 }
 
-.header-bottom .links li {
+.header-bottom .links a {
+  color: black;
   cursor: pointer;
+  text-decoration: none;
 }
 
-.header-bottom .links li.active {
+.header-bottom .links a.active {
   color: var(--main-color);
 }
 
-.header-bottom .links li:hover {
+.header-bottom .links a:hover {
   color: var(--main-color);
 }
 
@@ -262,6 +272,7 @@ body {
   font-weight: 300;
   padding: 1rem;
   display: grid;
+  color: #fff;
   gap: 1rem;
   font-size: 1.5rem;
   transition: var(--duration);
@@ -276,12 +287,17 @@ body {
   opacity: 1;
 }
 
-.header-bottom .links .header-pages li {
+.header-bottom .links .header-pages li a {
   transition: var(--duration);
 }
 
-.header-bottom .links .header-pages li:hover {
+.header-bottom .links .header-pages li a:hover {
   color: var(--main-color);
+}
+
+.header-bottom .links .header-pages .header-pages-list a {
+  color: #fff;
+  text-decoration: none;
 }
 
 .header-bottom .price {
