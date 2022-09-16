@@ -539,7 +539,7 @@ li {
   margin-top: 2rem;
   background-size: cover;
   background-position: top center;
-  background-image: url("/img/hero/banner.jpg");
+  background-image: url("../img/hero/banner.jpg");
   display: flex;
   align-items: center;
 }
